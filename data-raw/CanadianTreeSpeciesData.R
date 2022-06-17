@@ -49,7 +49,7 @@ S %<>% unite(spp, Genus, Species, sep=".", remove = F) %>%
   select(-spp)
 
 ### add NFI-like species code
-S %<>% unite(SPP_CODE, Genus, Species, Var, sep = ".", remove = F, na.rm = T)
+S %<>% unite(NFI_code, Genus, Species, Var, sep = ".", remove = F, na.rm = T)
 
 
 ### cleanup ####
@@ -66,7 +66,7 @@ S %<>%  select(-casfri_species_codes_OLD,
 S %<>% rename_with(.fn = ~str_replace(.x, "_species_codes", "_code"))
 S %<>% rename(canfi_code = canfi_species_code)
 
-S %<>% relocate(SPP_CODE, CommonNameEnglish, CommonNameFrench, ScientificName, Genus, Species, Var)
+S %<>% relocate(CommonNameEnglish, CommonNameFrench, ScientificName, Genus, Species, Var, NFI_code)
 
 ### save
 CanadianTreeSpeciesData <- S

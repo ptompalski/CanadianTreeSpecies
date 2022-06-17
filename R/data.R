@@ -5,7 +5,7 @@
 #'
 #' @format A data frame with 367 rows and 20 variables:
 #' \describe{
-#'   \item{SPP_CODE}{NFI species code}
+#'   \item{NFI_code}{NFI species code}
 #'   \item{CommonNameEnglish}{Common species name in English}
 #'   \item{CommonNameFrench}{Common species name in French}
 #'   \item{ScientificName}{Scientific species name (Latin)}

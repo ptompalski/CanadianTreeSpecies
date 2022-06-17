@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Piotr", "Tompalski", , "piotr.tompalski@NRCan-RNCan.gc.ca", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-5841-6530"))
-Description: What the package does (one paragraph).
+Description: R package and accompanying dataset containing tree species names (Scientific, English, French) and tree species codes used at national and provincial/territorial level.
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
